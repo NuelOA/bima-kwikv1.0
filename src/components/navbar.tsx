@@ -1,84 +1,94 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "../Assets/logo/bimaLogo.svg";
 
 export default function navbar() {
   return (
     
     <>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-  <div className="container-fluid">
-    <img src={Logo} alt="Company logo" className='ms-5' />
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-       
-      </ul>
-      <div className="d-flex me-5">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
+   <nav className="navbar navbar-expand-sm navbar-light py-3">
+          <Link className="navbar-brand ms-5" to="#">
+            <img src={Logo} alt="BigCo Inc. logo" />{" "}
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="collapse navbar-collapse justify-content-end nav-wrapper"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav me-5">
+              <li className="nav-item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to={"/productStep1"}
+                >
+                  Product
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
                   to="/About"
                 >
-                  Home
+                  About Us
                 </NavLink>
               </li>
-        <li className="nav-item">
-        <NavLink
+              <li className="nav-item">
+                <NavLink
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/About"
+                  to="/contact"
                 >
-                 Insurance Products
+                  Contact
                 </NavLink>
-        </li>
-        <li className="nav-item">
-        <NavLink
+              </li>
+              <li className="nav-item">
+                <NavLink
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/About"
+                  to="/promotion"
                 >
-                  Renew Policy
+                  Promotion
                 </NavLink>
-        </li>
+              </li>
 
-        <li className="nav-item">
-        <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                  to="/About"
-                >
-                 Claims
-                </NavLink>
-        </li>
-
-        <li className="nav-item">
-        <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                  to="/About"
-                >
-                 Support
-                </NavLink>
-        </li>
-
-        <li className="nav-item">
-         <button className='btn btn-primary'>Login</button>
-        </li>
-      </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+              <li className="nav-item">
+                <a
+                  className="btn btn-primary"
+                  href="/login"
+                >   
+                 Login
+                  </a>
+              
+              </li>
+            </ul>
+        </div>
+      </nav>
     </>
   )
 }
