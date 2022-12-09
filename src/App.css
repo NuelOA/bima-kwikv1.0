@@ -43,7 +43,7 @@
 	padding:25px 0;
   width: 100%;
   border-bottom: 3px solid transparent;
-  border-image:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(92,148,236,1) 45%, rgba(0,255,163,1) 93%, rgba(0,0,0,1) 100%);
+  border-image:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(7, 102, 255) 45%, rgb(0, 255, 162) 93%, rgba(0,0,0,1) 100%);
     border-image-slice: 1;
     width:100%;
 }
