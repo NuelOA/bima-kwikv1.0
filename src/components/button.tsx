@@ -1,10 +1,11 @@
 import React from "react";
 
-function Button(){
-  return(
-    <>
-    </>
-  )
+type ButtonProps ={
+  handleClick: () => void;
 }
 
-export default Button;
+export const Button = (props: ButtonProps) =>{
+  return(
+    <button onClick={props.handleClick}>English</button>
+  )
+}

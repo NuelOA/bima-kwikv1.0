@@ -6,7 +6,7 @@ export default function navbar() {
   return (
     
     <>
-   <nav className="navbar navbar-expand-sm navbar-light py-3">
+   <nav className="navbar navbar-expand-sm navbar-light bg-transparent py-3">
           <Link className="navbar-brand ms-5" to="#">
             <img src={Logo} alt="BigCo Inc. logo" />{" "}
           </Link>

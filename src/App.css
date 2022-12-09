@@ -38,12 +38,11 @@
 .navbar{
 	position: fixed;
 	top: 0;
-	background-color: #000 !important;
+	background-color: rgba(13, 13, 13, 0.644) !important;
 	z-index: 99999;
 	padding:25px 0;
   width: 100%;
-  opacity: .7;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   border-image:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(92,148,236,1) 45%, rgba(0,255,163,1) 93%, rgba(0,0,0,1) 100%);
     border-image-slice: 1;
     width:100%;
@@ -151,4 +150,35 @@
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: 500;
+}
+@-webkit-keyframes custom--btn{
+	50% {
+	  -webkit-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+  }
+  @keyframes custom--btn {
+	50% {
+	  -webkit-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+  }
+.custom--btn{
+	background-color: #31A854;
+	border: none;
+	color: white;
+	width: auto;
+	padding: 10px 50px 10px 50px;
+}
+.langIcon{
+	border-radius: 100px;
+}
+.custom--btn:hover{
+	background-color: #1fb64d;
+	border: none;
+	color: white;
+	width: auto;
+	box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.506);
+	padding: 10px 50px 10px 50px;
+	transition: 0.2s;
 }
