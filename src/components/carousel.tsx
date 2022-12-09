@@ -19,14 +19,16 @@ To Get <span className='text-danger'>Insurance</span> At Your Finger Tips</h1>
       </div>
       <div className="carousel-item">
       <div className="info">
-			      		<h1>Bima</h1>
-			      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			      		<h1 className='fs-1'>Having Pleasant Experience Whiles <br /> Enjoying Travel Insurance</h1>
+			      		<p>We Care About You And Your Safety. Providing You With Comprehensive
+ Life Insurance When You Need It The Most.</p>
 			      	</div>
       </div>
       <div className="carousel-item">
       <div className="info">
-			      		<h1>Bima</h1>
-			      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			      		<h1 className='fs-1'>Auto Insurance To Protect Your Assets <br/> From Unexpected Incidents</h1>
+			      		<p>We Care About You And Your Safety. Providing You With Comprehensive
+ Life Insurance When You Need It The Most</p>
 			      	</div>
       </div>
     </div>
