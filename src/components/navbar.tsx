@@ -44,17 +44,7 @@ export default function navbar() {
                   }
                   to={"/productStep1"}
                 >
-                  Product
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                  }
-                  to="/About"
-                >
-                  About Us
+                  Insurance Products
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -64,7 +54,7 @@ export default function navbar() {
                   }
                   to="/contact"
                 >
-                  Contact
+                  Renew Policy
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -74,9 +64,21 @@ export default function navbar() {
                   }
                   to="/promotion"
                 >
-                  Promotion
+                Claims
                 </NavLink>
               </li>
+
+              <li className="nav-item">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                  to="/promotion"
+                >
+                Support
+                </NavLink>
+              </li>
+
 
               <li className="nav-item">
                 <a
