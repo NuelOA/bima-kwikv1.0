@@ -8,24 +8,41 @@ import HomeInsuranceIcon from '../assets/icons/main-products-icon/home-insurance
 import TravelInsuranceIcon from '../assets/icons/main-products-icon/travel-insurance.svg'
 import MotorInsuranceIcon from '../assets/icons/main-products-icon/motor-insurance.svg'
 import { Checkbox } from '@mantine/core'; 
+import Products from './Products';
 
 
 
 export default function ProductsStep1() {
-  const [state, setState] = React.useState(false);
+  const [shwoProducts, isProductsShown] = React.useState(false);
+
+
+  //object interface
+  interface productData{
+    name: string;
+    imgUrl: string;
+  }
+  //Main product data
+  const productData =[
+      {
+        name: 'Health Insurance',
+        imgUrl: 'sadkld'
+      }
+  ]
+
+  console.log(productData)
 
 
   function handleRender(){
-    setState(true)
+    isProductsShown(true)
   }
 
-   if(!state){
+   if(!shwoProducts){
     return(
       <div className='allpagesbackground--container container-fluid'>
       <div className="row">
           <div className="col-md-6 ProductImage">
          <div className='mt-5 py-5 m-5'>
-         <p className='mt-5 text-white back--button' onClick={()=> window.location.pathname ="/" }><ArrowLeftCircle/> back</p>
+         <p className='mt-5 text-white back--button' onClick={()=> window.location.pathname ="/"}><ArrowLeftCircle/> back</p>
          </div>
           </div>
 
@@ -57,8 +74,6 @@ export default function ProductsStep1() {
      </div>
 
 
-
-
 <div className="d-grid gap-2">
 <button className="btn btn-primary   border--sharp height--50 mt-5" type="button" onClick={handleRender}>Proceed</button>
 </div>
@@ -70,32 +85,7 @@ export default function ProductsStep1() {
     )
    }else{
     return (
-      <div className='allpagesbackground--container container-fluid'>
-       {/**Content */}
-        <div className="row">
-          <div className="col-md-6 ProductImage">
-         <div className='mt-5 py-5 m-5'>
-         <p className='mt-5 text-white back--button' onClick={()=> setState(false)}><ArrowLeftCircle /> back</p>
-         <h2 className='text-white'>Packages</h2>
-         </div>
-          </div>
- 
-          <div className="col-md-6 py-5">
-          <form className='py-5'>
-     <h3 className='mt-5 text-light text-center'>Select Insurance Package</h3> 
-
-     <Step/>
-     </form>
-
-          </div>
-         
-    
-         
-    
-    
-            </div>
-        
-            </div>
+     <Products />
       )
    }
  
@@ -119,7 +109,7 @@ export default function ProductsStep1() {
 
 
   <>
-      {/* Inbuilt Stepper compoent */}
+      {/* INBUILT STEPPER COMPONENT*/}
   </>
 
 export function Step() {
