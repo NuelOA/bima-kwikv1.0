@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Products() {
   return (
-    <div className='AllPagesBackground--container container-fluid'>
+    <div className='allpagesbackground--container container-fluid'>
         {/*Content */}
         <div className="row">
       <div className="col-md-6 ProductImage">
@@ -10,6 +10,7 @@ export default function Products() {
 
   
       <div className="col-md-6">
+        
          </div>
 
 

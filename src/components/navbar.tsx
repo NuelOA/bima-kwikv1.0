@@ -42,7 +42,7 @@ export default function navbar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to={"/productStep1"}
+                  to={"/product-step1"}
                 >
                   Insurance Products
                 </NavLink>

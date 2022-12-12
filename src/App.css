@@ -179,7 +179,7 @@
 	padding: 10px 50px 10px 50px;
 	transition: 0.2s;
 }
-.AllPagesBackground--container{
+.allpagesbackground--container{
 background-color: #2C475E !important;
 height: auto
 }
@@ -194,8 +194,8 @@ height: auto
 	width: 400px;
 	color: #fff;
 }
-.height--60{
-	height: 60px;
+.height--50{
+	height: 50px;
 }
 .border--sharp {
 border-radius: 0 !important;
