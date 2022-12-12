@@ -103,19 +103,19 @@
 #carouselExampleIndicators .carousel-inner .carousel-item{
 	position: relative;
 	height: 100%;
-	background: url('./Assets/Bg/hero-slider.png');
+	background: url('./assets/Bg/hero-slider.png');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
-	background: url('./Assets/Bg/hero-slider2.png');
+	background: url('./assets/Bg/hero-slider2.png');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
-	background: url('./Assets/Bg/hero-slider3.png');
+	background: url('./assets/Bg/hero-slider3.png');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -184,7 +184,7 @@ background-color: #2C475E !important;
 height: auto
 }
 .ProductImage{
-	background-image: url("./Assets/Bg/step1--bg.png");
+	background-image: url("./assets/Bg/step1--bg.png");
 	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -193,4 +193,10 @@ height: auto
 .width--400{
 	width: 400px;
 	color: #fff;
+}
+.height--60{
+	height: 60px;
+}
+.border--sharp {
+border-radius: 0 !important;
 }

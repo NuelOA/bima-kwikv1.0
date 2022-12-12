@@ -3,7 +3,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route,  } from "react-router-dom";
 import Navbar from './components/navbar';
 import Home from './pages/Home';
-import Step1 from './pages/ProductsStep1';
+import Step1 from './pages/SelectCountry-Language';
+import Products from './pages/Products';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
          <Route path="/" element={<Home />}>
         </Route>
         <Route path="/productStep1" element={<Step1 />}>
+        </Route>
+        <Route path="/products" element={<Products />}>
         </Route>
          </Routes>
          </BrowserRouter>

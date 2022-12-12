@@ -1,7 +1,7 @@
 import React from "react";
 // import {Button}  from "./button";
-import EnglishLangIcon from "../Assets/icons/english-lang.svg";
-import SwahiliLangIcon from "../Assets/icons/swahili-lang.svg";
+import EnglishLangIcon from "../assets/icons/english-lang.svg";
+import SwahiliLangIcon from "../assets/icons/swahili-lang.svg";
 import 'react-slideshow-image/dist/styles.css'
 
 
