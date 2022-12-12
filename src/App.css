@@ -167,6 +167,23 @@
 	width: auto;
 	padding: 10px 50px 10px 50px;
 }
+.custom--btn-secondary:hover{
+	background-color: #24bf53;
+}
+.custom--btn-secondary{
+	background-color: #31A854;
+	border: none;
+	color: white;
+	width: auto;
+	padding: 10px 50px 10px 50px;
+}
+.custom--btn-primary{
+	background-color: #1d64c6;
+	border: none;
+	color: white;
+	width: auto;
+	padding: 10px 50px 10px 50px;
+}
 .langIcon{
 	border-radius: 100px;
 }
@@ -199,4 +216,15 @@ height: auto
 }
 .border--sharp {
 border-radius: 0 !important;
+}
+
+.back--button{
+	cursor: pointer;
+}
+.custom-bg{
+	background-color: #1A3248;
+}
+
+.cardSelector{
+  cursor: pointer;
 }

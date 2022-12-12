@@ -82,7 +82,7 @@ export default function navbar() {
 
               <li className="nav-item">
                 <a
-                  className="btn btn-primary"
+                  className="btn btn-primary border--sharp "
                   href="/login"
                 >   
                  Login

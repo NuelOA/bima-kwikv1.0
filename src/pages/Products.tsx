@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 export default function Products() {
   return (
     <div className='allpagesbackground--container container-fluid'>
@@ -10,7 +12,7 @@ export default function Products() {
 
   
       <div className="col-md-6">
-        
+
          </div>
 
 
