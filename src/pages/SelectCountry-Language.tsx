@@ -7,8 +7,7 @@ import LifeInsuranceIcon from '../assets/icons/main-products-icon/life-insurance
 import HomeInsuranceIcon from '../assets/icons/main-products-icon/home-insurance.svg'
 import TravelInsuranceIcon from '../assets/icons/main-products-icon/travel-insurance.svg'
 import MotorInsuranceIcon from '../assets/icons/main-products-icon/motor-insurance.svg'
-
-
+import { Checkbox } from '@mantine/core'; 
 
 
 
@@ -114,6 +113,11 @@ export default function ProductsStep1() {
 
 
 
+
+
+
+
+
   <>
       {/* Inbuilt Stepper compoent */}
   </>
@@ -123,13 +127,15 @@ export function Step() {
   const nextStep = () => setActive((current) => (current < 3 ? current + 1 : current));
   const prevStep = () => setActive((current) => (current > 0 ? current - 1 : current));
 
+
+
   return (
     <>
       <div className="row">
         <div className='col-md-4'>
         {/**Spacer */}
         </div>
-      <div className='col-md-8 mt-5 offset-md-2'>
+      <div className='col-md-8 mt-4 offset-md-2'>
         <Stepper active={active} onStepClick={setActive} color="teal" iconSize={35}>
         <Stepper.Step allowStepSelect={active < 0}>
         <p className='text-center mt-4 text-white'>What would you like to insure? </p>
@@ -192,11 +198,49 @@ export function Step() {
          
         </Stepper.Step>
         <Stepper.Step allowStepSelect={active > 1}>
-          Step 1 KYC
+          <div className='row mt-2'>
+          <div className="col-md-6">
+         <Checkbox className='custom--card p-3' label="Self" />
+          </div>
+
+          <div className="col-md-6">
+          <Checkbox className='custom--card p-3' label="Spouse"/>
+          </div>
+         </div>
+
+         <div className='row mt-5'>
+          <div className="col-md-6">
+         <Checkbox className='custom--card p-3' label="Son" />
+          </div>
+
+          <div className="col-md-6">
+          <Checkbox className='custom--card p-3' label="Daughter"/>
+          </div>
+         </div>
+
+
+         <div className='row mt-5'>
+          <div className="col-md-6">
+         <Checkbox className='custom--card p-3' label="Mother"/>
+          </div>
+
+          <div className="col-md-6">
+          <Checkbox className='custom--card p-3' label="Father"/>
+          </div>
+         </div>
+
+
+         <div className='row mt-5'>
+          <div className="col-md-6 ">
+         <div  className='custom--card p-3'>
+          More Members
+         </div>
+          </div>
+         </div>
 
 
 
-      <Group position="center" mt={50}>
+      <Group position="center" mt={25}>
         <Button  onClick={prevStep} className="height--50 custom--btn-secondary border--sharp">Back</Button>
         <Button onClick={nextStep} className="height--50 custom--btn-primary border--sharp ">Proceed</Button>
       </Group>
@@ -204,6 +248,12 @@ export function Step() {
 
         <Stepper.Step allowStepSelect={active > 2}>
           Step 2 content: Your Details
+
+
+      <Group position="center" mt={25}>
+        <Button  onClick={prevStep} className="height--50 custom--btn-secondary border--sharp">Back</Button>
+        <Button onClick={nextStep} className="height--50 custom--btn-primary border--sharp ">Proceed</Button>
+      </Group>
         </Stepper.Step>
 
         <Stepper.Completed>

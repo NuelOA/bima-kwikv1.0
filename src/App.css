@@ -1,4 +1,6 @@
-
+*{
+	color: white;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -227,4 +229,10 @@ border-radius: 0 !important;
 
 .cardSelector{
   cursor: pointer;
+}
+
+.custom--card{
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	margin-right: 2px;
 }
