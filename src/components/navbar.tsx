@@ -42,7 +42,7 @@ export default function navbar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to={"/product-step1"}
+                  to={"product-step1"}
                 >
                   Insurance Products
                 </NavLink>
@@ -52,7 +52,7 @@ export default function navbar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/contact"
+                  to="contact"
                 >
                   Renew Policy
                 </NavLink>
@@ -62,7 +62,7 @@ export default function navbar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/promotion"
+                  to="promotion"
                 >
                 Claims
                 </NavLink>
@@ -73,7 +73,7 @@ export default function navbar() {
                   className={({ isActive }) =>
                     isActive ? "nav-link active" : "nav-link"
                   }
-                  to="/promotion"
+                  to="promotion"
                 >
                 Support
                 </NavLink>
@@ -83,7 +83,7 @@ export default function navbar() {
               <li className="nav-item">
                 <a
                   className="btn btn-primary border--sharp "
-                  href="/login"
+                  href="login"
                 >   
                  Login
                   </a>

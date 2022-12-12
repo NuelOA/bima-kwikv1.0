@@ -3,6 +3,8 @@ import React from "react";
 import EnglishLangIcon from "../assets/icons/english-lang.svg";
 import SwahiliLangIcon from "../assets/icons/swahili-lang.svg";
 import 'react-slideshow-image/dist/styles.css'
+import { ChevronRight } from 'react-feather'
+import { Link } from 'react-router-dom'
 
 
 export default function carousel() {
@@ -55,7 +57,9 @@ export default function carousel() {
               Comprehensive <br/>Life Insurance When You Need It The Most.
             </p>
             <div className="div mt-5">
-            <button className="custom--btn me-4"><img src={EnglishLangIcon} alt="english" className="langIcon me-3"/>English</button>  <button className="custom--btn me-2"><img src={SwahiliLangIcon} alt="english" className="langIcon me-3"/>Swahili</button>  
+              <Link to="product-step1">
+            <button className="custom--btn me-4"><img src={EnglishLangIcon} alt="english" className="langIcon me-3"/>English <ChevronRight/> </button>  <button className="custom--btn me-2"><img src={SwahiliLangIcon} alt="english" className="langIcon me-3"/>Swahili <ChevronRight/></button>
+            </Link>  
             </div>
            
           </div>
