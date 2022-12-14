@@ -13,30 +13,14 @@ import Products from './Products';
 
 
 export default function ProductsStep1() {
-  const [shwoProducts, isProductsShown] = React.useState(false);
-
-
-  //object interface
-  interface productData{
-    name: string;
-    imgUrl: string;
-  }
-  //Main product data
-  const productData =[
-      {
-        name: 'Health Insurance',
-        imgUrl: 'sadkld'
-      }
-  ]
-
-  console.log(productData)
+  const [state, setState] = React.useState(false);
 
 
   function handleRender(){
-    isProductsShown(true)
+    setState(true)
   }
 
-   if(!shwoProducts){
+   if(!state){
     return(
       <div className='allpagesbackground--container container-fluid'>
       <div className="row">
@@ -89,9 +73,13 @@ export default function ProductsStep1() {
       )
    }
  
-
- 
 }
+
+
+
+
+
+
 
 
 
@@ -119,6 +107,37 @@ export function Step() {
 
 
 
+  //object interface
+  interface productData{
+    id: number;
+    name: string;
+    imgUrl: string;
+  }
+  //Main product data
+  const productData =[
+      {
+        id: 1,
+        name: 'Health Insurance',
+        imgUrl: 'sadkld'
+      },
+
+      {
+        id: 2,
+        name: 'Health Insurance',
+        imgUrl: 'sadkld'
+      },
+
+
+      {
+        id: 3,
+        name: 'Health Insurance',
+        imgUrl: 'sadkld'
+      }
+  ]
+
+
+
+
   return (
     <>
       <div className="row">
@@ -129,7 +148,6 @@ export function Step() {
         <Stepper active={active} onStepClick={setActive} color="teal" iconSize={35}>
         <Stepper.Step allowStepSelect={active < 0}>
         <p className='text-center mt-4 text-white'>What would you like to insure? </p>
-         <>
          <div className='row'>
           <div className="col-md-4">
           <Card onClick={nextStep} className="text-center border--sharp cardSelector">
@@ -137,6 +155,13 @@ export function Step() {
          </Card>
          <div className="custom-bg">
             <p className='text-white text-center p-2'>Health Insurance</p>
+            <>
+            {productData.map((name, id) => {
+              return(
+                <p key={id}>{name}</p>
+              )
+            })}
+            </>
             </div>
           </div>
 
@@ -183,8 +208,7 @@ export function Step() {
             </div>
           </div>
          </div>
-         </>
-
+ 
          
         </Stepper.Step>
         <Stepper.Step allowStepSelect={active > 1}>
